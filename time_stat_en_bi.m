@@ -3,9 +3,9 @@ clear
 rng(1);%for repeatly
 
 
-m_size_start=100;
-m_size_end=1000;
-mz_leapsize=100;
+m_size_start=500;
+m_size_end=10000;
+mz_leapsize=500;
 
 time_stat_en=zeros(1,(m_size_end-m_size_start)/mz_leapsize+1);
 time_stat_en_mean=zeros(1,(m_size_end-m_size_start)/mz_leapsize+1);
