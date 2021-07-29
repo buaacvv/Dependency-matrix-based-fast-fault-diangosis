@@ -3,12 +3,12 @@ clear
 rng(1);%for repeatly
 
 digit_start=4;
-digit_end=8;
+digit_end=15;
 d_leapsize=1;
 
-m_size_start=50;
-m_size_end=100;
-mz_leapsize=50;
+m_size_start=500;
+m_size_end=10000;
+mz_leapsize=500;
 
 accuracy_m=zeros((digit_end-digit_start)/d_leapsize+1,(m_size_end-m_size_start)/mz_leapsize+1);
 
