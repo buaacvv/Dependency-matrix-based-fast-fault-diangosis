@@ -16,7 +16,7 @@ time_stat_bi_mean=zeros(1,(m_size_end-m_size_start)/mz_leapsize+1);
 mem_bi=zeros(1,(m_size_end-m_size_start)/mz_leapsize+1);
 
 for matrix_size=m_size_start:mz_leapsize:m_size_end
-digit=10;%熵值有效位数
+digit=11;%The length of significant figures, which is obtained from 'accuracy.m' file
 %matrix_size矩阵规模
 
 d_matrix=randi([0,1],matrix_size,matrix_size);
