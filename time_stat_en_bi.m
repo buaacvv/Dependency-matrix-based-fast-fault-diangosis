@@ -182,6 +182,9 @@ mem_bi((matrix_size-m_size_start)/mz_leapsize+1)=mem.bytes/8;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear ku d_matrix test_sequence test_opt_d test_opt_i sr_en sr_bi dic d_dictionary
 
+progress=progress+1;
+disp(['Progress:',num2str(progress),'/',num2str(numel(time_stat_en))]);
+
 end
 x=m_size_start:mz_leapsize:m_size_end;
 plot(x,time_stat_en,'--o',x,time_stat_bi,'--*');
