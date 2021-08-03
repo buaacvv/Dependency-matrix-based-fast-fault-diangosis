@@ -148,7 +148,7 @@ accuracy_m((digit-digit_start)/d_leapsize+1,...
 clear ku d_matrix test_sequence test_opt_d test_opt_i sr_en
 
 progress=progress+1;
-disp(['Progress:',num2str(progress),'/',num2str(numel(time_stat_en))]);
+disp(['Progress:',num2str(progress),'/',num2str(numel(accuracy_m))]);
 
 end
 end
