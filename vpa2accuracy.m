@@ -12,6 +12,8 @@ mz_leapsize=500;
 
 accuracy_m=zeros((digit_end-digit_start)/d_leapsize+1,(m_size_end-m_size_start)/mz_leapsize+1);
 
+progress=0;
+
 for digit=digit_start:d_leapsize:digit_end
 for matrix_size=m_size_start:mz_leapsize:m_size_end
 %digit=8;%熵值有效位数
@@ -144,6 +146,10 @@ accuracy_m((digit-digit_start)/d_leapsize+1,...
     (matrix_size-m_size_start)/mz_leapsize+1)=accuracy;
 
 clear ku d_matrix test_sequence test_opt_d test_opt_i sr_en
+
+progress=progress+1;
+disp(['Progress:',num2str(progress),'/',num2str(numel(time_stat_en))]);
+
 end
 end
 [X,Y]=meshgrid(digit_start:d_leapsize:digit_end,m_size_start:mz_leapsize:m_size_end);
